@@ -1,10 +1,13 @@
 #mainImage{
 	width: 80%;
+	height: auto;
 }
 
 #mainImageCell{
 	text-align: center;
 	border: 2px solid grey;
+	width: 500px;
+	height: 500px;
 }
 
 #description{
@@ -18,7 +21,14 @@ table{
 	margin: auto;
 }
 
-#thumbnails {
+img.thumbnails {
+	cursor: pointer;
 	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
 	width: 10%;
+}
+
+p{
+	text-align: left;
 }

@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Product 6</title>
 	<link rel="stylesheet" type="text/css" href="../../css/menu.css">
+	<link rel="stylesheet" type="text/css" href="../../css/items.css">
+	<script type="text/javascript" src="../../js/items.js"></script>
 </head>
 <body>
 	<div class="navbar">
@@ -13,20 +15,31 @@
 	</div>
 	
 	<div class="main_body">
-		<table style="width: 70%" align="center" border="1px">
+		<table>
 			<tr>
-				<td align="center"><img src="../../asset/item6/EB_Volume_1.jpg" style="width: 80%"></td>
-				<td width="500" align="center">
-					<b>Ernie Ball Volume Pedal</b><br><br>
-					<p>The Ernie Ball VP Jr 250k provides all the same great features as our original volume pedal while reducing your footprint by 22%. The VP 250k Jr is perfectly voiced for passive signals and features a compact, rugged design consisting of aircraft grade aluminum housing that is virtually indestructible. Directly behind the input jack under the footplate is a micro taper switch which provides the user two distinct volume swell rates.</p>
+				<td id="mainImageCell">
+					<img id="mainImage" src="../../asset/item6/EB_Volume_1.jpg" alt="Ernie Ball Volume 1">
+				</td>
+				<td id="description">
+					<b>Ernie Ball Volume Pedal</b><br>
+					$99.00<br><br>
+					<p>The Ernie Ball VP Jr 250k provides all the same great features as our original volume pedal while reducing your footprint by 22%. <br>
+						The VP 250k Jr is perfectly voiced for passive signals and features a compact, rugged design consisting of aircraft grade aluminum housing that is virtually indestructible. <br>
+						Directly behind the input jack under the footplate is a micro taper switch which provides the user two distinct volume swell rates.
+					</p>
 
 				</td>
 			</tr>
 		</table>
 
-		<table style="width: 70%" align="center" border="1px">
+		<table>
 			<tr>
-				<td></td>
+				<td>
+					<img class="thumbnails" id="thumbnail1" onclick="switchImage('thumbnail1')" src="../../asset/item6/EB_Volume_1.jpg" alt="Ernie Ball Volume 1">
+					<img class="thumbnails" id="thumbnail2" onclick="switchImage('thumbnail2')" src="../../asset/item6/EB_Volume_2.jpg" alt="Ernie Ball Volume 2">
+					<img class="thumbnails" id="thumbnail3" onclick="switchImage('thumbnail3')" src="../../asset/item6/EB_Volume_3.jpg" alt="Ernie Ball Volume 3">
+					<img class="thumbnails" id="thumbnail4" onclick="switchImage('thumbnail4')" src="../../asset/item6/EB_Volume_4.jpg" alt="Ernie Ball Volume 4">
+				</td>
 			</tr>
 			
 		</table>

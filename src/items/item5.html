@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Product 5</title>
 	<link rel="stylesheet" type="text/css" href="../../css/menu.css">
+	<link rel="stylesheet" type="text/css" href="../../css/items.css">
+	<script type="text/javascript" src="../../js/items.js"></script>
 </head>
 <body>
 	<div class="navbar">
@@ -13,20 +15,30 @@
 	</div>
 
 	<div class="main_body">
-		<table style="width: 70%" align="center" border="1px">
+		<table>
 			<tr>
-				<td align="center"><img src="../../asset/item5/TS9_1.jpg" style="width: 80%"></td>
-				<td width="500" align="center">
-					<b>Ibanez Tube Screamer 9</b><br><br>
-					<p>The TS9 Tube Screamer is one of the most imitated classic distortion pedals ever made. Now you can get your hands on a reissue that's every bit as authentic as an original. In fact, this TS9 Tube Screamer features the same components, housing, and seasick-green paint used to make the original models. They're even made in the same factory! What's even more important is that the sound is dead on. Discover classic stompbox distortion and drive - plug into an Ibanez TS9 Tube Screamer!</p>
+				<td id="mainImageCell">
+					<img id="mainImage" src="../../asset/item5/TS9_1.jpg" alt="TS9 1">
+				</td>
+				<td id="description">
+					<b>Ibanez Tube Screamer 9</b><br>
+					$99.00<br><br>
+					<p>The TS9 Tube Screamer is one of the most imitated classic distortion pedals ever made. <br>
+						Now you can get your hands on a reissue that's every bit as authentic as an original. <br>
+						In fact, this TS9 Tube Screamer features the same components, housing, and seasick-green paint used to make the original models. <br>They're even made in the same factory! What's even more important is that the sound is dead on. <br>
+						Discover classic stompbox distortion and drive - plug into an Ibanez TS9 Tube Screamer!</p>
 
 				</td>
 			</tr>
 		</table>
 
-		<table style="width: 70%" align="center" border="1px">
+		<table>
 			<tr>
-				<td></td>
+				<td>
+					<img class='thumbnails' id='thumbnail1' onclick="switchImage('thumbnail1')" src='../../asset/item5/TS9_1.jpg' alt='TS9 1'>
+					<img class='thumbnails' id='thumbnail2' onclick="switchImage('thumbnail2')" src='../../asset/item5/TS9_2.jpg' alt='TS9 2'>
+					<img class='thumbnails' id='thumbnail3' onclick="switchImage('thumbnail3')" src='../../asset/item5/TS9_3.jpg' alt='TS9 3'>
+				</td>
 			</tr>
 			
 		</table>

@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Product 4</title>
 	<link rel="stylesheet" type="text/css" href="../../css/menu.css">
+	<link rel="stylesheet" type="text/css" href="../../css/items.css">
+	<script type="text/javascript" src="../../js/items.js"></script>
 </head>
 <body>
 	<div class="navbar">
@@ -13,20 +15,30 @@
 	</div>
 
 	<div class="main_body">
-		<table style="width: 70%" align="center" border="1px">
+		<table>
 			<tr>
-				<td align="center"><img src="../../asset/item4/Fulldrive2_1.jpg" style="width: 80%"></td>
-				<td width="500" align="center">
-					<b>Fulltone Fulldrive 2</b><br><br>
-					<p>Housed in a beautiful powder coated Blue 16ga. steel enclosure, the dual-channel Full-Drive 2 Mosfet gives you the best of both worlds. The first channel is the Overdrive Mode, capable of clean boost or non-compressed overdrive or choose light to medium softer overdrives all while retaining your guitar's original tone. The Tone knob is a very effective presence control that can smooth out or add upper harmonics. The second channel is the "Boost Mode" with its own separate distortion control for medium to higher gains with a more singing violin-like sustain!</p>
+				<td id="mainImageCell">
+					<img id="mainImage" src="../../asset/item4/Fulldrive2_1.jpg" alt="Fulldrive2 1">
+				</td>
+
+				<td id="description">
+					<b>Fulltone Fulldrive 2</b><br>
+					$129.00<br><br>
+					<p>Housed in a beautiful powder coated Blue 16ga. steel enclosure, the dual-channel Full-Drive 2 Mosfet gives you the best of both worlds. <br>
+					The first channel is the Overdrive Mode, capable of clean boost or non-compressed overdrive or choose light to medium softer overdrives all while retaining your guitar's original tone. <br>
+					The Tone knob is a very effective presence control that can smooth out or add upper harmonics. The second channel is the "Boost Mode" with its own separate distortion control for medium to higher gains with a more singing violin-like sustain!</p>
 
 				</td>
 			</tr>
 		</table>
 
-		<table style="width: 70%" align="center" border="1px">
+		<table>
 			<tr>
-				<td></td>
+				<td>
+					<img class="thumbnails" id="thumbnail1" onclick="switchImage('thumbnail1')" src="../../asset/item4/Fulldrive2_1.jpg" alt="Fulldrive2 1">
+					<img class="thumbnails" id="thumbnail2" onclick="switchImage('thumbnail2')" src="../../asset/item4/Fulldrive2_2.jpg" alt="Fulldrive2 2">
+					<img class="thumbnails" id="thumbnail3" onclick="switchImage('thumbnail3')" src="../../asset/item4/Fulldrive2_3.jpg" alt="Fulldrive2 3">
+				</td>
 			</tr>
 			
 		</table>

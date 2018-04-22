@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Product 9</title>
 	<link rel="stylesheet" type="text/css" href="../../css/menu.css">
+	<link rel="stylesheet" type="text/css" href="../../css/items.css">
+	<script type="text/javascript" src="../../js/items.js"></script>
 </head>
 <body>
 	<div class="navbar">
@@ -13,20 +15,28 @@
 	</div>
 
 	<div class="main_body">
-		<table style="width: 70%" align="center" border="1px">
+		<table>
 			<tr>
-				<td align="center"><img src="../../asset/item9/RV6_1.jpg" style="width: 80%"></td>
-				<td width="500" align="center">
-					<b>Boss RV 6 Reverb</b><br><br>
-					<p>Combining high-end sound and wide-ranging versatility, the RV-6 takes pedal-based reverb to the next level. Reaching beyond the capabilities of previous generations, this powerful stomp employs the latest tech and legendary BOSS know-how to make it easy to get amazing reverb tones instantly. From subtle rooms to modern shimmer effects to long, evocative reverbs, the RV-6 envelops your tone in lush ambient spaces that endlessly inspire.</p>
+				<td id="mainImageCell">
+					<img id="mainImage" src="../../asset/item9/RV6_1.jpg" alt="RV6 1">
+				</td>
+				<td id="description">
+					<b>Boss RV 6 Reverb</b><br>
+					$129.00<br><br>
+					<p>Combining high-end sound and wide-ranging versatility, the RV-6 takes pedal-based reverb to the next level.<br>
+					 Reaching beyond the capabilities of previous generations, this powerful stomp employs the latest tech and legendary BOSS know-how to make it easy to get amazing reverb tones instantly. <br>
+					From subtle rooms to modern shimmer effects to long, evocative reverbs, the RV-6 envelops your tone in lush ambient spaces that endlessly inspire.</p>
 
 				</td>
 			</tr>
 		</table>
 
-		<table style="width: 70%" align="center" border="1px">
+		<table>
 			<tr>
-				<td></td>
+				<td>
+					<img class="thumbnails" id="thumbnail1" onclick="switchImage('thumbnail1')" src="../../asset/item9/RV6_1.jpg" alt="RV6 1">
+					<img class="thumbnails" id="thumbnail2" onclick="switchImage('thumbnail2')" src="../../asset/item9/RV6_2.jpg" alt="RV6 2">
+				</td>
 			</tr>
 			
 		</table>

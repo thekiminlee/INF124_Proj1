@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Product 7</title>
 	<link rel="stylesheet" type="text/css" href="../../css/menu.css">
+	<link rel="stylesheet" type="text/css" href="../../css/items.css">
+	<script type="text/javascript" src="../../js/items.js"></script>
 </head>
 <body>
 	<div class="navbar">
@@ -13,20 +15,26 @@
 	</div>
 
 	<div class="main_body">
-		<table style="width: 70%" align="center" border="1px">
+		<table>
 			<tr>
-				<td align="center"><img src="../../asset/item7/ZOOM_MS_1.jpg" style="width: 80%"></td>
-				<td width="500" align="center">
-					<b>ZOOM MS-50G Multistomp Pedal</b><br><br>
-					<p>Zoom's MS-50G MultiStomp guitar pedal combines the power of a multi-effects device and the flexibility of an amp modeler in a single compact stompbox. With its 55 custom guitar effects and amp models, an easy-to-use interface, onboard chromatic tuner and versatile power options, you'll be surprised at  how much  the MS-50G has to offer.</p>
-
+				<td id="mainImageCell">
+					<img id="mainImage" src="../../asset/item7/ZOOM_MS_1.jpg" alt="ZOOM MS-50G 1">
+				</td>
+				<td id="description">
+					<b>ZOOM MS-50G Multistomp Pedal</b><br>
+					$99.00<br><br>
+					<p>Zoom's MS-50G MultiStomp guitar pedal combines the power of a multi-effects device and the flexibility of an amp modeler in a single compact stompbox. <br>
+					With its 55 custom guitar effects and amp models, an easy-to-use interface, onboard chromatic tuner and versatile power options, you'll be surprised at  how much  the MS-50G has to offer.</p>
 				</td>
 			</tr>
 		</table>
 
-		<table style="width: 70%" align="center" border="1px">
+		<table>
 			<tr>
-				<td></td>
+				<td>
+					<img class="thumbnails" id="thumbnail1" onclick="switchImage('thumbnail1')" src="../../asset/item7/ZOOM_MS_1.jpg" alt="ZOOM MS-50G 1">
+					<img class="thumbnails" id="thumbnail2" onclick="switchImage('thumbnail2')" src="../../asset/item7/ZOOM_MS_2.jpg" alt="ZOOM MS-50G 2">
+				</td>
 			</tr>
 			
 		</table>

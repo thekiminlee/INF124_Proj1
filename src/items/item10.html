@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Product 10</title>
 	<link rel="stylesheet" type="text/css" href="../../css/menu.css">
+	<link rel="stylesheet" type="text/css" href="../../css/items.css">
+	<script type="text/javascript" src="../../js/items.js"></script>
 </head>
 <body>
 	<div class="navbar">
@@ -13,20 +15,30 @@
 	</div>
 
 	<div class="main_body">
-		<table style="width: 70%" align="center" border="1px">
+		<table>
 			<tr>
-				<td align="center"><img src="../../asset/item10/SF_1.jpg" style="width: 60%"></td>
-				<td width="500" align="center">
-					<b>Electro-Harmonix Soul Food Overdrive/Fuzz</b><br><br>
-					<p>The SOUL FOOD delivers transparent overdrive with great touch and response. Its circuitry features boosted power rails to provide abundant headroom and increased definition. Best of all, you don’t have to be a rock star to own one!</p>
+				<td id=mainImageCell>
+					<img id=mainImage src="../../asset/item10/SF_1.jpg" alt="EHX Soul Food 1">
+				</td>
+				<td id="description">
+					<b>Electro-Harmonix Soul Food Overdrive/Fuzz</b><br>
+					$99.00<br><br>
+					<p>The SOUL FOOD delivers transparent overdrive with great touch and response. <br>
+						Its circuitry features boosted power rails to provide abundant headroom and increased definition. <br>
+						Best of all, you don’t have to be a rock star to own one!</p>
 
 				</td>
 			</tr>
 		</table>
 
-		<table style="width: 70%" align="center" border="1px">
+		<table>
 			<tr>
-				<td></td>
+				<td>
+					<img class="thumbnails" id="thumbnail1" onclick="switchImage('thumbnail1')" src="../../asset/item10/SF_1.jpg" alt="EHX Soul Food 1">
+					<img class="thumbnails" id="thumbnail2" onclick="switchImage('thumbnail2')" src="../../asset/item10/SF_2.jpg" alt="EHX Soul Food 2">
+					<img class="thumbnails" id="thumbnail3" onclick="switchImage('thumbnail3')" src="../../asset/item10/SF_3.jpg" alt="EHX Soul Food 3">
+					<img class="thumbnails" id="thumbnail4" onclick="switchImage('thumbnail4')" src="../../asset/item10/SF_4.jpg" alt="EHX Soul Food 4">
+				</td>
 			</tr>
 			
 		</table>
