@@ -32,3 +32,20 @@ img.thumbnails {
 p{
 	text-align: left;
 }
+
+fieldset{
+	width: 60%;
+	margin: auto;
+}
+
+#purchase{
+	padding-top: 40px;
+}
+
+input:invalid{
+	background-color: #FDD;
+}
+
+
+
+
