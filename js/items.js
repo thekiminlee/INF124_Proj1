@@ -19,7 +19,7 @@ function purchaseForm(){
 						Card Number: <input type="text" id="cno" name="Card number" pattern="[0-9]{16}" maxlength="16" required><br>\
 						Shipping Method: <input type="text" name="Shipping method" required>\
 					<center>\
-						<input type="submit" value="Send">\
+						<input type="submit" value="Purchase">\
 						<input type="reset" name="Reset">\
 					</center></form>\
 					</fieldset>';
