@@ -13,6 +13,15 @@
 ?>
 
 	<div class="main_body">
+		<center>
+			<h2> Order Summary </h2>
+			<hr>
+			<h4> Purchase form submitted.</h4>
+			<table style="width: 50%" border="1px">
+				<tr>
+					<td>
+						<center>
+							<div class="table_body">
 
 <?php
 	require ('_connect.php');
@@ -36,8 +45,7 @@
 	$sql = "INSERT INTO purchased (first_name, last_name, phone_num, email, product, quantity, address, card_num, shipping) VALUES ('$first_name', '$last_name', '$phone', '$email', '$product', '$quantity', '$full_addr', '$card_num', '$shipping')";
 
 	if($conn->query($sql) === TRUE){
-		echo 'Purchase form submitted.<br>';
-		echo '<br>Customer: '.$first_name.' '.$last_name;
+		echo 'Customer: '.$first_name.' '.$last_name;
 		echo '<br>Phone number: '.$phone;
 		echo '<br>E-Mail: '.$email;
 		echo '<br>Purchased Product: '.$product;
@@ -51,6 +59,14 @@
 	}
 	$conn->close();
 ?>
+							</div>
+						</center>
+					</td>
+				</tr>
+			</table>
+			<br><br><br>
+			<img id="about_logo" src="../asset/white.png" alt='brand logo'>
+		</center>
 	</div>
 </body>
 </html>

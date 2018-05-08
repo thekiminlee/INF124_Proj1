@@ -23,6 +23,11 @@
 	margin-top: 100px;
 }
 
+.table_body{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 * {
 	font-family: "Avenir", Arial, sans-serif
 }
