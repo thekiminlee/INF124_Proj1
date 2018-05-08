@@ -28,7 +28,7 @@
 					Compressing your dynamic range will make notes sustain longer, the sound seem tighter and help you avoid clipping the signal going into other effects or your amplifier.</p>
 					<br><br>
 					$79.00<br><br>
-					<button onclick="purchaseForm()">Purchase</button>
+					<button onclick="purchaseForm(79)">Purchase</button>
 					<button onclick="closeForm()">Close Form</button>
 
 				</td>

@@ -5,7 +5,7 @@ function switchImage(id){
 	document.getElementById("mainImage").alt = newAlt;
 }
 
-function purchaseForm(){
+function purchaseForm(price){
 	var form = '<fieldset> \
 					<legend>Purchase Form (red required)</legend>\
 					<form id="purchaseform" action="../confirmation.php" method="post">\
@@ -14,7 +14,8 @@ function purchaseForm(){
 						Phone Number: <input type="text" id="pno" name="Phone number" pattern="[0-9]{10}" maxlength="10" required>\
 						E-Mail: <input type="email" id="email" name="e-mail" required><br>\
 						Product Name: <input type="text" name="Product Name" required>\
-						Quantity: <input type="number" name="Quantity" required min="1" max="1000"><br>\
+						Quantity: <input type="number" name="Quantity" required min="1" max="1000" onblur="calculateTotal('+price+', this.value)">\
+						Total (before tax&shipping): $<span id="total">0.00</span><br>\
 						Address: <input type="text" id="address" name="Address" size="100"" required><br> \
 						Zip Code: <input type="text" name="Zip code" required pattern="[0-9]{4,5}" maxlength="5" onblur="getLocation(this.value)"> \
 						City: <input type="textarea" id="city" name="City" required>\
@@ -57,3 +58,8 @@ function getLocation(zip){
 	xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
 	xhr.send("zip="+zip);
 }
+
+function calculateTotal(price, quantity){
+	var total = price * quantity;
+	document.getElementById("total").innerHTML = total + ".00";
+} 

@@ -27,7 +27,7 @@
 
 					<br><br>
 					$99.00<br><br>
-					   <button onclick="purchaseForm()">Purchase</button>
+					   <button onclick="purchaseForm(99)">Purchase</button>
 					   <button onclick="closeForm()">Close Form</button>
 				</td>
 			</tr>

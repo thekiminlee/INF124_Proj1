@@ -28,7 +28,7 @@
 					The Tone knob is a very effective presence control that can smooth out or add upper harmonics. The second channel is the "Boost Mode" with its own separate distortion control for medium to higher gains with a more singing violin-like sustain!</p>
 				<br><br>
 				$129.00<br><br>
-					   <button onclick="purchaseForm()">Purchase</button>
+					   <button onclick="purchaseForm(129)">Purchase</button>
 					   <button onclick="closeForm()">Close Form</button>
 				</td>
 			</tr>

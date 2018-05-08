@@ -26,7 +26,7 @@
 					   Along with great sound, these JFET’s give the FD3 an ultra-high Input impedance which allows the pedal to mate with any type/gain of pickup and react well to changes in your guitar’s volume control.</p>
 					<br><br>
 					$139.00<br><br>
-					<button onclick="purchaseForm()">Purchase</button>
+					<button onclick="purchaseForm(139)">Purchase</button>
 					<button onclick="closeForm()">Close Form</button>
 				</td>
 			</tr>

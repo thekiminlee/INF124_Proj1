@@ -27,7 +27,7 @@
 					From subtle rooms to modern shimmer effects to long, evocative reverbs, the RV-6 envelops your tone in lush ambient spaces that endlessly inspire.</p>
 					<br><br>
 					$129.00<br><br>
-					   <button onclick="purchaseForm()">Purchase</button>
+					   <button onclick="purchaseForm(129)">Purchase</button>
 					   <button onclick="closeForm()">Close Form</button>
 				</td>
 			</tr>

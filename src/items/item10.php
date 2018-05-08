@@ -27,7 +27,7 @@
 						Best of all, you don’t have to be a rock star to own one!</p>
 					<br><br>
 					$99.00<br><br>
-					   <button onclick="purchaseForm()">Purchase</button>
+					   <button onclick="purchaseForm(99)">Purchase</button>
 					   <button onclick="closeForm()">Close Form</button>
 				</td>
 			</tr>
