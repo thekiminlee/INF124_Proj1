@@ -25,10 +25,15 @@
 	$product = $_POST["Product_Name"];
 	$quantity = $_POST["Quantity"];
 	$addr = $_POST["Address"];
+	$zip = $_POST["Zip_code"];
+	$city = $_POST["City"];
+	$state = $_POST["State"];
 	$card_num = $_POST["Card_number"];
 	$shipping = $_POST["Shipping_method"];
 
-	$sql = "INSERT INTO purchased (first_name, last_name, phone_num, email, product, quantity, address, card_num, shipping) VALUES ('$first_name', '$last_name', '$phone', '$email', '$product', '$quantity', '$addr', '$card_num', '$shipping')";
+	$full_addr = $addr.' '.$city.', '.$state.' '.$zip;
+
+	$sql = "INSERT INTO purchased (first_name, last_name, phone_num, email, product, quantity, address, card_num, shipping) VALUES ('$first_name', '$last_name', '$phone', '$email', '$product', '$quantity', '$full_addr', '$card_num', '$shipping')";
 
 	if($conn->query($sql) === TRUE){
 		echo 'Purchase form submitted.<br>';
@@ -37,7 +42,7 @@
 		echo '<br>E-Mail: '.$email;
 		echo '<br>Purchased Product: '.$product;
 		echo '<br>Quantity: '.$quantity;
-		echo '<br>Address: '.$addr;
+		echo '<br>Address: '.$full_addr;
 		echo '<br>Card Number: XXXX-XXXX-XXXX-'.substr($card_num, -4);
 		echo '<br>Shipping Method: '.$shipping;
 	} else {
