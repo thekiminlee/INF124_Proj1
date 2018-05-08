@@ -7,11 +7,10 @@
 </head>
 
 <body>
-	<div class="navbar">
-		<a href="index.html">PEDAL WORLD</a>
-		<a href="src/products.html">Products</a>
-		<a href="src/about_us.html">About Us</a>
-	</div>
+	<?php 
+		require ('src/_menu.php'); 
+		indexMenu();
+	?>
 
 	<div class="main_logo">
 		<center>

@@ -8,7 +8,7 @@ function switchImage(id){
 function purchaseForm(){
 	var form = '<fieldset> \
 					<legend>Purchase Form (red required)</legend>\
-					<form id="purchaseform" action="mailto:pedalworld@gmail.com?subject=Item%20Purchase" method="post" enctype="text/plain">\
+					<form id="purchaseform" action="../confirmation.php" method="post">\
 						First Name: <input type="text" name="First Name" required>\
 						Last Name: <input type="text" name="Last Name" required>\
 						Phone Number: <input type="text" id="pno" name="Phone number" pattern="[0-9]{10}" maxlength="10" required>\

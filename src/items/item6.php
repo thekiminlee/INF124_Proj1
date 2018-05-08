@@ -8,11 +8,11 @@
 	<script type="text/javascript" src="../../js/items.js"></script>
 </head>
 <body>
-	<div class="navbar">
-		<a href="../../index.html">PEDAL WORLD</a>
-		<a href="../products.html">Products</a>
-		<a href="../about_us.html">About Us</a>
-	</div>
+	<?php
+		require ('../_menu.php');
+		require ('../_connect.php');
+		itemMenu();
+	?>
 	
 	<div class="main_body">
 		<table>
@@ -37,10 +37,9 @@
 		<table>
 			<tr>
 				<td>
-					<img class="thumbnails" id="thumbnail1" onclick="switchImage('thumbnail1')" src="../../asset/item6/EB_Volume_1.jpg" alt="Ernie Ball Volume 1">
-					<img class="thumbnails" id="thumbnail2" onclick="switchImage('thumbnail2')" src="../../asset/item6/EB_Volume_2.jpg" alt="Ernie Ball Volume 2">
-					<img class="thumbnails" id="thumbnail3" onclick="switchImage('thumbnail3')" src="../../asset/item6/EB_Volume_3.jpg" alt="Ernie Ball Volume 3">
-					<img class="thumbnails" id="thumbnail4" onclick="switchImage('thumbnail4')" src="../../asset/item6/EB_Volume_4.jpg" alt="Ernie Ball Volume 4">
+	<?php
+		imageThumbnails(6);
+	?>
 				</td>
 			</tr>
 			

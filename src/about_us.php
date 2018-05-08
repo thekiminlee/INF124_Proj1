@@ -6,11 +6,10 @@
 	<link rel="stylesheet" type="text/css" href="../css/menu.css">
 </head>
 <body>
-	<div class="navbar">
-		<a href="../index.html">PEDAL WORLD</a>
-		<a href="products.html">Products</a>
-		<a href="about_us.html">About Us</a>
-	</div>
+	<?php 
+		require ('_menu.php');
+		srcMenu();
+	?>
 
 	<div class="main_body">
 		<center>

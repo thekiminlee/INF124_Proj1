@@ -8,11 +8,11 @@
 	<script type="text/javascript" src="../../js/items.js"></script> 
 </head>
 <body>
-	<div class="navbar">
-		<a href="../../index.html">PEDAL WORLD</a>
-		<a href="../products.html">Products</a>
-		<a href="../about_us.html">About Us</a>
-	</div>
+	<?php
+		require ('../_menu.php');
+		require ('../_connect.php');
+		itemMenu();
+	?>
 
 	<div class="main_body">
 		<!-- Main Image-->
@@ -39,9 +39,11 @@
 		<table>
 			<tr>
 				<td>
-					<img class="thumbnails" id="thumbnail1" onclick='switchImage("thumbnail1")' src="../../asset/item1/Dyna_Comp_1.jpg" alt="Dyna Cmop 1">
-					<img class="thumbnails" id="thumbnail2" onclick='switchImage("thumbnail2")' src="../../asset/item1/Dyna_Comp_2.jpg" alt="Dyna Comp 2">
-					<img class="thumbnails" id="thumbnail3" onclick='switchImage("thumbnail3")' src="../../asset/item1/Dyna_Comp_3.jpg" alt="Dyna Comp 3">
+
+	<?php
+		imageThumbnails(1);
+	?>
+
 				</td>
 			</tr>
 		</table>
