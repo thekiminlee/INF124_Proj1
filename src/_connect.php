@@ -1,9 +1,9 @@
 <?php
 // Connects to give database and establishes connection
 // use $conn to query
-	$servername = "matt-smith-v4.ics.uci.edu";
-	$username = "inf124db031";
-	$password = "kimin1234";
+	$servername = "";
+	$username = "";
+	$password = "";
 	$db = "inf124db031";
 
 	// Create connection
