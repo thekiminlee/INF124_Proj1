@@ -3,7 +3,7 @@
 // use $conn to query
 	$servername = "localhost";
 	$username = "root";
-	$password = "kimin1234";
+	$password = "";
 	$db = "inf124";
 
 	// Create connection
